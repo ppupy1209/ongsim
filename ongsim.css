@@ -1,0 +1,76 @@
+:root{
+  --bg:#f5f7fb;--card:#ffffff;--ink:#141a2e;--muted:#4c556b;--line:#dde2ec;
+  --accent:#2a5bd0;--accent-ink:#ffffff;--navy:#13204a;--soft:#eef2fb;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0d1220;--card:#151c2e;--ink:#e8ecf5;--muted:#a9b2c6;--line:#2a3350;
+    --accent:#8fb3ff;--accent-ink:#0d1220;--navy:#0a1024;--soft:#1b2440}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;
+  word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--accent);text-underline-offset:2px}
+img{max-width:100%;height:auto}
+
+.brandbar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  max-width:800px;margin:0 auto;padding:14px 16px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:800;letter-spacing:.14em;font-size:15px}
+.brand img{width:28px;height:28px;border-radius:7px}
+.brandbar nav a{font-size:14px;text-decoration:none}
+
+.page{max-width:800px;margin:0 auto;padding:24px 16px 48px}
+.apphead{display:flex;gap:16px;align-items:center;margin:8px 0 20px}
+.apphead img{width:64px;height:64px;border-radius:15px;flex:none;box-shadow:0 0 0 1px var(--line)}
+.apphead h1{font-size:clamp(22px,5vw,28px);line-height:1.25;margin:0}
+.appname{margin:0;color:var(--muted);font-size:14px;font-weight:600}
+.sub{margin:0;color:var(--muted);font-size:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:14px}
+.tabs a[aria-current="page"]{color:var(--ink);font-weight:700;text-decoration:none}
+
+.content > section,.content > article,.content > aside,.content > dl,.content > div,.content > header{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 20px 14px;margin:14px 0}
+.content > nav{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0;font-size:14px}
+.content section section,.content article section{background:none;border:0;padding:0;margin:0}
+.content h2{font-size:20px;line-height:1.35;margin:22px 0 8px}
+.content h3{font-size:17px;margin:18px 0 6px}
+.content p,.content li,.content dd{color:var(--muted)}
+.content strong,.content dt{color:var(--ink)}
+.content ul,.content ol{padding-left:1.3em}
+.content li{margin:4px 0}
+.content dl > div{margin:12px 0}
+.content dt{font-weight:700;margin-top:12px}
+.content dd{margin:4px 0 0}
+.content dd p{margin:6px 0}
+.content details{border-top:1px solid var(--line);padding:8px 0}
+.content details:first-child{border-top:0}
+.content summary{cursor:pointer;font-weight:700;color:var(--ink);padding:4px 0}
+.content summary h3{display:inline;font-size:17px;margin:0}
+.content figure{margin:14px 0;text-align:center}
+.content figure img{width:auto;max-width:min(100%,300px);border-radius:18px;box-shadow:0 0 0 1px var(--line)}
+.content figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.content table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}
+.content th,.content td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+.content time{font-variant-numeric:tabular-nums}
+.content a + a{margin-left:.7em}
+.content summary + a,.content p + a,.content div > a:only-child{display:inline-block}
+
+.notice{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding:2px 12px;margin:24px 0}
+.notice p{margin:6px 0}
+
+.home .intro h1{font-size:clamp(30px,8vw,40px);letter-spacing:.12em;margin:8px 0 4px}
+.lede{font-size:17px;margin:6px 0}
+.small{font-size:14px;color:var(--muted)}
+.home h2{font-size:20px;margin:28px 0 10px}
+.apps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:14px}
+.card{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.card img{width:64px;height:64px;border-radius:15px;flex:none;box-shadow:0 0 0 1px var(--line)}
+.card h3{margin:0 0 4px;font-size:18px}
+.card h3 .en{font-weight:500;color:var(--muted);font-size:14px}
+.card p{margin:4px 0;color:var(--muted);font-size:15px}
+.card .links{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:8px;font-size:14px}
+
+.sitefoot{max-width:800px;margin:0 auto;padding:20px 16px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.sitefoot p{margin:4px 0}
