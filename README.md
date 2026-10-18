@@ -18,3 +18,8 @@ Support and privacy pages for ONGSIM apps: https://ppupy1209.github.io/ongsim/
 ## 2026-10-18 owedone/support.html 직접 수정 (1.2.0 여러 통화)
 - '여러 통화를 한 원장에 쓸 수 있나요?' KO/EN 답을 1.2.0(직접 입력 환율로 환산, 두 번째 통화 저장은 이용권) 기준으로 고치고 owedone-support의 여러 통화 안내로 연결했다.
 - build_site.py로 다시 생성하면 이 수정이 사라지므로, 재생성 전에 같은 문구를 원본 쪽에 반영하거나 이 커밋의 diff를 다시 적용한다.
+
+## 2026-10-18 보안메일 열기 페이지 직접 추가 (출시 전, noindex)
+- securemail/support.html·privacy.html·index.html·icon.png를 choguen 페이지 형식 그대로 직접 작성했다. 홈·sitemap에는 넣지 않았다(출시 후 build_site.py에 항목 추가).
+- 개인정보: 기기 안 처리, 메일 안 외부 주소(스타일·글꼴·이미지) 요청, '이 메일 방식 알려주기' 여섯 항목만 Google 설문지로 전송(진단 데이터, 연결·추적 없음), Apple 처리 구입. 시행일 10/18.
+- build_site.py로 다시 생성하면 이 폴더는 APPS 목록에 없어 남지만, 재생성 전에 확인한다.
