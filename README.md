@@ -23,3 +23,7 @@ Support and privacy pages for ONGSIM apps: https://ppupy1209.github.io/ongsim/
 - securemail/support.html·privacy.html·index.html·icon.png를 choguen 페이지 형식 그대로 직접 작성했다. 홈·sitemap에는 넣지 않았다(출시 후 build_site.py에 항목 추가).
 - 개인정보: 기기 안 처리, 메일 안 외부 주소(스타일·글꼴·이미지) 요청, '이 메일 방식 알려주기' 여섯 항목만 Google 설문지로 전송(진단 데이터, 연결·추적 없음), Apple 처리 구입. 시행일 10/18.
 - build_site.py로 다시 생성하면 이 폴더는 APPS 목록에 없어 남지만, 재생성 전에 확인한다.
+
+## 2026-10-20 Cutaway Facts Uploader 정책 페이지 직접 추가 (noindex)
+- cutaway-uploader/index.html·privacy.html·terms.html·icon.png: TikTok for Developers 앱(개인용 데스크톱 받은편지함 업로드 도구)의 소개·개인정보·약관 URL용. 홈·sitemap에는 넣지 않았다.
+- 개인정보: open_id·토큰은 운영자 Mac 파일에만, TikTok API 외 전송·제3자 공유 없음, 토큰 파일 삭제·TikTok 앱 권한 해제로 삭제. 시행일 10/20.
