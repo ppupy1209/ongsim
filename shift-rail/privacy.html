@@ -20,7 +20,7 @@
 <div class="content">
 <header>
         <h2>Privacy, stated plainly.</h2>
-        <p>Effective October 14, 2026 · 시행일 2026년 10월 14일</p>
+        <p>Effective October 20, 2026 · 시행일 2026년 10월 20일</p>
         <nav aria-label="Page language">
           <a href="#english">English</a>
           <a lang="ko" href="#korean">한국어</a>
@@ -40,10 +40,12 @@
             <li>saved routine identifiers, names, and scheduled state;</li>
             <li>alarm identifiers, titles, times, repeat days, and enabled state;</li>
             <li>the sound selected for each routine;</li>
-            <li>saved target-time plans (plan name, the alarm to align and the target time), which require Shift Rail Pro; saved shift patterns (pattern name, shift types and their alarm times, rotation, first day and single-day changes), which require Shift Rail Pro; and</li>
+            <li>saved target-time plans (plan name, the alarm to align and the target time), which require Shift Rail Pro; saved shift patterns and rosters (name, shift types and their alarm times, rotation, first day and single-day changes);</li>
+            <li>from version 1.3.0, the number of free roster-image shares you have used (a single number); and</li>
             <li>a temporary recovery journal containing the original and target schedules while a change is being completed.</li>
           </ul>
           <p>This information is used only to create, duplicate, select, show, edit, schedule, switch, shift, verify, turn off, and recover the routines you manage in Shift Rail.</p>
+          <p>From version 1.3.0, the free-share count is also kept in the iOS keychain on your iPhone, which can remain after the app is deleted so that reinstalling does not reset the free tries, and, if iCloud is on, in your own iCloud key-value storage under your Apple Account so that your other devices show the same count. It contains only that number. The developer cannot read either copy and receives nothing from them.</p>
         </section>
 
         <section>
@@ -61,7 +63,7 @@
         <section>
           <h2>5. Retention and deletion</h2>
           <p>Local routine data remains until you edit or delete a routine, or delete the app. A pending recovery journal is removed after Shift Rail completes and verifies the related operation. Before deleting the app, use “Turn off Shift Rail alarms” so the app can ask iOS to remove its scheduled alarms and verify the result.</p>
-          <p>Deleting the app normally removes its local container from the device. Apple’s device backup and restore features are controlled by Apple and your iOS settings.</p>
+          <p>Deleting the app normally removes its local container from the device. The free-share count in the keychain and in your iCloud may remain after the app is deleted. Apple’s device backup and restore features are controlled by Apple and your iOS settings.</p>
         </section>
 
         <section>
@@ -82,14 +84,14 @@
 
         <section>
           <h2>9. Sharing, processors, and your choices</h2>
-          <p>The developer does not sell personal information or share it for advertising. Apple processes App Store purchases and AlarmKit requests, Google provides the support mailbox, and GitHub hosts this website. Information may also be disclosed when required by applicable law or a valid legal process.</p>
+          <p>The developer does not sell personal information or share it for advertising. Apple processes App Store purchases, AlarmKit requests and iCloud key-value storage, Google provides the support mailbox, and GitHub hosts this website. Information may also be disclosed when required by applicable law or a valid legal process.</p>
           <p>You can edit or delete app data by editing or deleting routines or deleting the app, revoke Alarm access in iOS Settings, and request access to or deletion of support correspondence by email.</p>
         </section>
 
         <section>
           <h2>10. Children, security, and changes</h2>
           <p>Shift Rail is a general utility and is not directed to children. Because the app does not collect data from users, it does not knowingly collect personal information from children.</p>
-          <p>Shift Rail minimizes risk by keeping its app data local and by using iOS system frameworks. No method of storage is completely secure. A revised policy will be posted here with a new effective date before material changes take effect.</p>
+          <p>Shift Rail minimizes risk by keeping its app data on your device (and the free-share count in your own iCloud) and by using iOS system frameworks. No method of storage is completely secure. A revised policy will be posted here with a new effective date before material changes take effect.</p>
         </section>
 
         <section>
@@ -112,10 +114,12 @@
             <li>각 알람의 식별자, 이름, 시간, 반복 요일, 사용 여부</li>
             <li>루틴마다 선택한 알람 소리</li>
             <li>저장한 목표 시각 계획(계획 이름, 맞출 알람, 목표 시각) — Shift Rail Pro 필요</li>
-            <li>저장한 교대 패턴(패턴 이름, 근무 종류와 알람 시각, 근무 주기, 시작일, 하루 예외) — Shift Rail Pro 필요</li>
+            <li>저장한 교대 패턴·근무표(이름, 근무 종류와 알람 시각, 근무 주기, 시작일, 하루 예외)</li>
+            <li>1.3.0부터: 근무표 이미지 공유 무료 체험을 쓴 횟수(숫자 하나)</li>
             <li>일정 변경을 마칠 때까지 원래 일정과 목표 일정을 담는 임시 복구 기록</li>
           </ul>
           <p>이 정보는 Shift Rail에서 관리하는 루틴을 만들고 복제하고 선택하고 표시하고 편집하고 예약하고 전환하고 이동하고 확인하거나 모두 끄고 복구하는 데만 사용합니다.</p>
+          <p>1.3.0부터 무료 체험 횟수는 iPhone의 iOS 키체인에도 저장되어, 앱을 지웠다 다시 설치해도 횟수가 초기화되지 않도록 앱 삭제 뒤에도 남을 수 있습니다. iCloud를 켠 경우 같은 Apple 계정의 다른 기기에서도 같은 횟수가 보이도록 사용자 본인의 iCloud 키-값 저장소에도 저장됩니다. 저장되는 것은 그 숫자뿐이며, 개발자는 어느 쪽도 읽을 수 없고 아무것도 받지 않습니다.</p>
         </section>
 
         <section>
@@ -133,7 +137,7 @@
         <section>
           <h2>5. 보유 기간과 삭제</h2>
           <p>로컬 루틴 정보는 사용자가 루틴을 편집 또는 삭제하거나 앱을 삭제할 때까지 남습니다. 진행 중인 복구 기록은 Shift Rail이 해당 작업을 마치고 확인한 뒤 삭제합니다. 앱을 삭제하기 전에는 ‘Shift Rail 알람 모두 끄기’를 사용해 예약한 알람을 iOS에서 제거하고 결과를 확인하세요.</p>
-          <p>앱을 삭제하면 일반적으로 기기의 앱 전용 저장 공간도 삭제됩니다. Apple의 기기 백업과 복원은 Apple 및 사용자의 iOS 설정에 따라 처리됩니다.</p>
+          <p>앱을 삭제하면 일반적으로 기기의 앱 전용 저장 공간도 삭제됩니다. 키체인과 iCloud에 있는 무료 체험 횟수는 앱을 삭제한 뒤에도 남을 수 있습니다. Apple의 기기 백업과 복원은 Apple 및 사용자의 iOS 설정에 따라 처리됩니다.</p>
         </section>
 
         <section>
@@ -154,14 +158,14 @@
 
         <section>
           <h2>9. 제3자 제공, 처리 위탁, 정보주체의 권리</h2>
-          <p>개발자는 개인정보를 판매하거나 광고 목적으로 제공하지 않습니다. Apple은 App Store 구매와 AlarmKit 요청을 처리하고, Google LLC는 고객지원 메일함을 제공하며, GitHub, Inc.는 이 웹사이트를 호스팅합니다. 법령 또는 적법한 절차에 따라 요구되는 경우에는 관련 정보를 제공할 수 있습니다.</p>
+          <p>개발자는 개인정보를 판매하거나 광고 목적으로 제공하지 않습니다. Apple은 App Store 구매, AlarmKit 요청, iCloud 키-값 저장소를 처리하고, Google LLC는 고객지원 메일함을 제공하며, GitHub, Inc.는 이 웹사이트를 호스팅합니다. 법령 또는 적법한 절차에 따라 요구되는 경우에는 관련 정보를 제공할 수 있습니다.</p>
           <p>앱에서 루틴을 편집 또는 삭제하거나 앱을 삭제해 로컬 정보를 변경 또는 삭제할 수 있고, iOS 설정에서 알람 접근 권한을 철회할 수 있습니다. 이메일로 고객지원 문의 기록의 열람 또는 삭제를 요청할 수 있습니다.</p>
         </section>
 
         <section>
           <h2>10. 파기, 안전조치, 아동, 변경</h2>
           <p>Shift Rail은 일반적인 도구이며 아동을 대상으로 하지 않습니다. 앱에서 사용자 데이터를 수집하지 않으므로 아동의 개인정보를 고의로 수집하지 않습니다.</p>
-          <p>앱 데이터를 로컬에 보관하고 iOS 시스템 프레임워크를 사용하며, 고객지원 계정 접근을 제한해 위험을 줄입니다. 보유 목적이 끝난 이메일은 메일함과 휴지통에서 삭제합니다. 어떤 저장 방식도 완전한 보안을 보장할 수는 없습니다. 중요한 변경이 있다면 적용 전에 새 시행일과 함께 이 페이지에 게시합니다.</p>
+          <p>앱 데이터를 기기에 보관하고(무료 체험 횟수는 사용자 본인의 iCloud에도) iOS 시스템 프레임워크를 사용하며, 고객지원 계정 접근을 제한해 위험을 줄입니다. 보유 목적이 끝난 이메일은 메일함과 휴지통에서 삭제합니다. 어떤 저장 방식도 완전한 보안을 보장할 수는 없습니다. 중요한 변경이 있다면 적용 전에 새 시행일과 함께 이 페이지에 게시합니다.</p>
         </section>
 
         <section>
