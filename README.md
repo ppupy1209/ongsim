@@ -23,6 +23,7 @@ Support and privacy pages for ONGSIM apps: https://ppupy1209.github.io/ongsim/
 - securemail/support.html·privacy.html·index.html·icon.png를 choguen 페이지 형식 그대로 직접 작성했다. 홈·sitemap에는 넣지 않았다(출시 후 build_site.py에 항목 추가).
 - 개인정보: 기기 안 처리, 메일 안 외부 주소(스타일·글꼴·이미지) 요청, '이 메일 방식 알려주기' 여섯 항목만 Google 설문지로 전송(진단 데이터, 연결·추적 없음), Apple 처리 구입. 시행일 10/18.
 - build_site.py로 다시 생성하면 이 폴더는 APPS 목록에 없어 남지만, 재생성 전에 확인한다.
+- 2026-11-04 앱 이름을 보안메일 뷰어(Secure Mail Viewer)로 바꿨다(user-decisions 2.44c). 세 페이지의 제목·앱 이름·공유 시트 안내만 교체, 홈 버튼 이름 ‘견본 보안메일 열기’와 무료 기능 목록의 ‘보안메일 열기’(동작)는 그대로.
 
 ## 2026-10-20 Cutaway Facts Uploader 정책 페이지 직접 추가 (noindex)
 - cutaway-uploader/index.html·privacy.html·terms.html·icon.png: TikTok for Developers 앱(개인용 데스크톱 받은편지함 업로드 도구)의 소개·개인정보·약관 URL용. 홈·sitemap에는 넣지 않았다.
