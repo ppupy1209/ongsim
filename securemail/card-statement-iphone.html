@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>아이폰에서 카드 명세서 보안메일이 안 열릴 때 — 보안메일 뷰어</title>
+<meta name="description" content="카드사·은행·증권사가 보낸 HTML 보안메일 첨부를 iPhone에서 여는 순서와, 흰 화면만 나올 때 해 볼 일.">
+<link rel="canonical" href="https://ppupy1209.github.io/ongsim/securemail/card-statement-iphone.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ONGSIM">
+<meta property="og:title" content="아이폰에서 카드 명세서 보안메일이 안 열릴 때">
+<meta property="og:description" content="카드사·은행·증권사가 보낸 HTML 보안메일 첨부를 iPhone에서 여는 순서와, 흰 화면만 나올 때 해 볼 일.">
+<meta property="og:url" content="https://ppupy1209.github.io/ongsim/securemail/card-statement-iphone.html">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="../ongsim.css">
+</head>
+<body>
+<header class="brandbar"><a class="brand" href="../"><img src="../assets/ongsim-mark.png" alt="" width="28" height="28"><span>ONGSIM</span></a><nav aria-label="ONGSIM"><a href="../">앱 · Apps</a></nav></header>
+<main class="page">
+<div class="apphead"><img src="icon.png" alt="" width="64" height="64"><div><p class="appname">보안메일 뷰어</p><h1>아이폰에서 카드 명세서 보안메일이 안 열릴 때</h1><p class="sub">2026-11-10 · 앱을 만든 ONGSIM이 쓴 안내입니다</p><nav class="tabs" aria-label="보안메일 뷰어"><a href="support.html">Support · 지원</a><a href="privacy.html">Privacy Policy · 개인정보 처리방침</a></nav></div></div>
+<div class="content">
+<section>
+<p>카드 명세서나 은행·증권 안내가 ‘보안메일’로 오면 메일에 .html 첨부가 붙어 있습니다. 이 첨부 안의 스크립트가 비밀번호를 확인하고 본문을 풀어 보여 주는 방식이라, iPhone 메일 앱의 미리보기에서는 비밀번호 칸이 동작하지 않거나 흰 화면만 보이는 일이 많습니다.</p>
+<h2>여는 순서</h2>
+<ol>
+<li>메일 앱에서 보안메일 첨부(.html·.htm)를 길게 누르고 ‘공유’ › ‘보안메일 뷰어’를 고릅니다. 목록에 없으면 ‘파일 앱에 저장’한 뒤 앱의 ‘파일에서 열기’로 엽니다. 메일째 저장한 .eml도 열 수 있습니다.</li>
+<li>보낸 곳이 알려 준 비밀번호를 넣고 확인을 누릅니다.</li>
+<li>넓은 명세서는 화면 폭에 맞춰 보이고, 가로로 돌리면 크게 볼 수 있습니다.</li>
+</ol>
+<p>내 메일로 해 보기 전에 홈의 ‘견본 보안메일 열기’로 가짜 명세서를 먼저 열어 볼 수 있습니다. 비밀번호는 0000입니다.</p>
+<h2>비밀번호를 넣었는데 흰 화면이면</h2>
+<ul>
+<li>앱이 원인을 카드로 보여 줍니다. 글자 깨짐(EUC-KR 같은 옛 인코딩), 스크립트 오류, PC 전용 형식, 파일 손상 가운데 무엇인지와 다음에 해 볼 일이 나옵니다.</li>
+<li>카드의 ‘호환 모드로 다시 열기’를 눌러 보세요.</li>
+<li>비밀번호를 모르면 메일을 보낸 기관에 문의해야 합니다. 앱은 비밀번호를 알아내지 못합니다.</li>
+</ul>
+<h2>열 수 없는 보안메일</h2>
+<p>보낸 기관의 서버에 접속해야 열리는 방식과 PC 전용 프로그램이 필요한 방식은 열 수 없습니다. 이런 메일을 만나면 카드의 ‘이 메일 방식 알려주기’로 알려 주세요. 보낼 내용을 먼저 보여 주고, ‘보내기’를 누를 때만 전송합니다.</p>
+<h2>안전</h2>
+<ul>
+<li>비밀번호 확인과 본문 표시는 기기 안에서 이루어집니다.</li>
+<li>입력한 값을 외부로 보내려는 가짜 보안메일은 막고 알려 줍니다. 메일 속 스크립트의 외부 요청은 항상 차단합니다.</li>
+</ul>
+<h2>비용</h2>
+<p>보안메일 열기·흰 화면 진단·가짜 보안메일 경고·견본은 무료입니다. 내 메일을 PDF로 저장하거나 인쇄하는 것은 합쳐서 3회 무료이고, 그 뒤에는 한 번 사는 이용권(구독 아님)이 필요합니다.</p>
+<p><a href="https://apps.apple.com/kr/app/id6823108071">App Store에서 보안메일 뷰어 보기</a> · iPhone, iOS 17 이상</p>
+<p>이 앱은 카드사·은행·증권사나 보안메일 업체와 관련이 없습니다. 더 자세한 사용법은 <a href="support.html">지원 페이지</a>에 있습니다.</p>
+</section>
+</div>
+
+</main>
+<footer class="sitefoot"><p>© 2026 ONGSIM · <a href="mailto:ppupy1200@gmail.com">ppupy1200@gmail.com</a></p><p><a href="support.html">Support · 지원</a> · <a href="privacy.html">Privacy Policy · 개인정보 처리방침</a> · <a href="../">ONGSIM 앱 · Apps</a></p><p>상호 옹심 · 대표 김연우 · 사업자등록번호 735-67-00865 · 통신판매업 신고 제2026-서울강서-2774호</p></footer>
+</body>
+</html>
