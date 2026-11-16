@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="../ongsim.css">
-<style>.content th,.content td{overflow-wrap:normal;word-break:keep-all;font-size:14px;padding:5px 5px}</style>
+<style>@media (max-width:520px){.content table{display:block;overflow:visible;width:100%}.content thead{display:none}.content tbody{display:block}.content tr{display:block;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 10px}.content td{display:block;border:0;padding:3px 0;word-break:keep-all;overflow-wrap:normal}.content td:first-child{font-weight:700;font-size:16px;color:var(--ink);padding:0 0 4px}.content td[data-label]::before{content:attr(data-label);display:block;font-size:12px;font-weight:600;color:var(--muted);line-height:1.4;margin-top:4px}}</style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -119,12 +119,12 @@
 <table>
 <thead><tr><th>방법</th><th>저장 형식</th><th>값</th><th>알아 둘 것</th></tr></thead>
 <tbody>
-<tr><td>한글 for macOS (한컴)</td><td>HWPX가 기본 저장 형식</td><td>한컴 공식 스토어(hancom.com)에서 판매, 또는 한컴독스 개인용 요금제에 포함. 값은 <a href="https://www.hancom.com/store/list?type=mac">한컴 공식 페이지</a>에서 확인</td><td>최신 3개 macOS 지원, 설치 2GB 이상.</td></tr>
-<tr><td>한컴독스 웹 (한컴)</td><td>한컴독스 저장공간</td><td>무료 요금제에 웹 한컴오피스·<wbr>저장공간 2GB</td><td>브라우저에서 씁니다. <a href="https://www.hancom.com/service/docs">한컴독스 요금제 안내</a>에는 무료 요금제에 ‘Windows/<wbr>Mac 한컴오피스 뷰어’가 들어 있다고 적혀 있습니다.</td></tr>
-<tr><td>맥글 (App Store)</td><td>HWP·<wbr>HWPX·<wbr>워드·<wbr>PDF</td><td>편집·<wbr>저장 무료. 양식 이용권 월 ₩2,900·<wbr>연 ₩9,900, 맥글 AI 월 ₩5,900</td><td>Mac·<wbr>iPhone·<wbr>iPad 한 앱.</td></tr>
-<tr><td>폴라리스 오피스 (Mac App Store)</td><td>HWP 편집, PDF로 저장</td><td>앱 안 구입(스마트 ₩4,900부터)</td><td>로그인과 인터넷 연결이 필요합니다. 공식 요금제 표에서 HWP/<wbr>HWPX 편집은 스마트 요금제 항목에 있습니다.</td></tr>
-<tr><td>HOP (오픈소스)</td><td>HWP 저장, PDF 내보내기</td><td>무료(MIT 라이선스)</td><td>GitHub에서 받습니다.</td></tr>
-<tr><td>HWP 뷰어 (ONGSIM)</td><td>.hwp·<wbr>.hwpx(편집 창), 채운 양식은 ‘(작성)’이 붙은 새 파일</td><td>편집·<wbr>저장 무료 + 평생 이용권 ₩3,900</td><td>HWP 뷰어 Mac 2.0.0: .hwp·<wbr>.hwpx 보기, 편집 창(⌘E)에서 고치기, .hwp·<wbr>.hwpx로 저장이 무료입니다. 서명 넣은 PDF, 변환(PDF·<wbr>사진을 한글 파일로, 워드 내보내기), PDF 합치기, PDF 암호는 각각 3번 무료이고, 그 뒤에는 평생 이용권 ₩3,900을 한 번 삽니다(구독 아님). macOS 15 이상, 변환만 macOS 26 이상입니다.</td></tr>
+<tr><td>한글 for macOS (한컴)</td><td data-label="저장 형식">HWPX가 기본 저장 형식</td><td data-label="값">한컴 공식 스토어(hancom.com)에서 판매, 또는 한컴독스 개인용 요금제에 포함. 값은 <a href="https://www.hancom.com/store/list?type=mac">한컴 공식 페이지</a>에서 확인</td><td data-label="알아 둘 것">최신 3개 macOS 지원, 설치 2GB 이상.</td></tr>
+<tr><td>한컴독스 웹 (한컴)</td><td data-label="저장 형식">한컴독스 저장공간</td><td data-label="값">무료 요금제에 웹 한컴오피스·저장공간 2GB</td><td data-label="알아 둘 것">브라우저에서 씁니다. <a href="https://www.hancom.com/service/docs">한컴독스 요금제 안내</a>에는 무료 요금제에 ‘Windows/Mac 한컴오피스 뷰어’가 들어 있다고 적혀 있습니다.</td></tr>
+<tr><td>맥글 (App Store)</td><td data-label="저장 형식">HWP·HWPX·워드·PDF</td><td data-label="값">편집·저장 무료. 양식 이용권 월 ₩2,900·연 ₩9,900, 맥글 AI 월 ₩5,900</td><td data-label="알아 둘 것">Mac·iPhone·iPad 한 앱.</td></tr>
+<tr><td>폴라리스 오피스 (Mac App Store)</td><td data-label="저장 형식">HWP 편집, PDF로 저장</td><td data-label="값">앱 안 구입(스마트 ₩4,900부터)</td><td data-label="알아 둘 것">로그인과 인터넷 연결이 필요합니다. 공식 요금제 표에서 HWP/HWPX 편집은 스마트 요금제 항목에 있습니다.</td></tr>
+<tr><td>HOP (오픈소스)</td><td data-label="저장 형식">HWP 저장, PDF 내보내기</td><td data-label="값">무료(MIT 라이선스)</td><td data-label="알아 둘 것">GitHub에서 받습니다.</td></tr>
+<tr><td>HWP 뷰어 (ONGSIM)</td><td data-label="저장 형식">.hwp·.hwpx(편집 창), 채운 양식은 ‘(작성)’이 붙은 새 파일</td><td data-label="값">편집·저장 무료 + 평생 이용권 ₩3,900</td><td data-label="알아 둘 것">HWP 뷰어 Mac 2.0.0: .hwp·.hwpx 보기, 편집 창(⌘E)에서 고치기, .hwp·.hwpx로 저장이 무료입니다. 서명 넣은 PDF, 변환(PDF·사진을 한글 파일로, 워드 내보내기), PDF 합치기, PDF 암호는 각각 3번 무료이고, 그 뒤에는 평생 이용권 ₩3,900을 한 번 삽니다(구독 아님). macOS 15 이상, 변환만 macOS 26 이상입니다.</td></tr>
 </tbody>
 </table>
 

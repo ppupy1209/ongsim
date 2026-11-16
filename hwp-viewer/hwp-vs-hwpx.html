@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="../ongsim.css">
-<style>.content th,.content td{overflow-wrap:normal;word-break:keep-all;font-size:14px;padding:5px 5px}</style>
+<style>@media (max-width:520px){.content table{display:block;overflow:visible;width:100%}.content thead{display:none}.content tbody{display:block}.content tr{display:block;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 10px}.content td{display:block;border:0;padding:3px 0;word-break:keep-all;overflow-wrap:normal}.content td:first-child{font-weight:700;font-size:16px;color:var(--ink);padding:0 0 4px}.content td[data-label]::before{content:attr(data-label);display:block;font-size:12px;font-weight:600;color:var(--muted);line-height:1.4;margin-top:4px}}</style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -119,10 +119,10 @@
 <table>
 <thead><tr><th></th><th>HWP (.hwp)</th><th>HWPX (.hwpx)</th></tr></thead>
 <tbody>
-<tr><td>구조</td><td>바이너리 파일</td><td>XML 파일들을 ZIP으로 묶은 형식</td></tr>
-<tr><td>표준</td><td>한컴 형식</td><td>국가표준 KS X 6101(OWPML, 2011년 12월 30일 제정)</td></tr>
-<tr><td>여는 한/<wbr>글</td><td>한/<wbr>글 전반</td><td>한/<wbr>글 2010 SE+부터</td></tr>
-<tr><td>기본 저장 형식</td><td>업데이트한 한/<wbr>글은 계속 HWP</td><td>새로 설치한 한/<wbr>글은 HWPX</td></tr>
+<tr><td>구조</td><td data-label="HWP (.hwp)">바이너리 파일</td><td data-label="HWPX (.hwpx)">XML 파일들을 ZIP으로 묶은 형식</td></tr>
+<tr><td>표준</td><td data-label="HWP (.hwp)">한컴 형식</td><td data-label="HWPX (.hwpx)">국가표준 KS X 6101(OWPML, 2011년 12월 30일 제정)</td></tr>
+<tr><td>여는 한/글</td><td data-label="HWP (.hwp)">한/글 전반</td><td data-label="HWPX (.hwpx)">한/글 2010 SE+부터</td></tr>
+<tr><td>기본 저장 형식</td><td data-label="HWP (.hwp)">업데이트한 한/글은 계속 HWP</td><td data-label="HWPX (.hwpx)">새로 설치한 한/글은 HWPX</td></tr>
 </tbody>
 </table>
 <p>근거: 한컴 고객지원 FAQ ‘HWPX 관련 자주하는 질문’, 한컴테크 ‘HWPX 포맷 구조 살펴보기’(2025-02-26).</p>

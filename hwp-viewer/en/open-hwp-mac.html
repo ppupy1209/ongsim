@@ -20,7 +20,7 @@
 <link rel="icon" type="image/png" href="../icon.png">
 <link rel="apple-touch-icon" href="../icon.png">
 <link rel="stylesheet" href="../../ongsim.css">
-<style>.content th,.content td{overflow-wrap:normal;word-break:keep-all;font-size:14px;padding:5px 5px}</style>
+<style>@media (max-width:520px){.content table{display:block;overflow:visible;width:100%}.content thead{display:none}.content tbody{display:block}.content tr{display:block;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 10px}.content td{display:block;border:0;padding:3px 0;word-break:keep-all;overflow-wrap:normal}.content td:first-child{font-weight:700;font-size:16px;color:var(--ink);padding:0 0 4px}.content td[data-label]::before{content:attr(data-label);display:block;font-size:12px;font-weight:600;color:var(--muted);line-height:1.4;margin-top:4px}}</style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -128,14 +128,14 @@
 <table>
 <thead><tr><th>Option</th><th>What it does</th><th>Price</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td>Hancom Office HWP Viewer (Hancom, Mac App Store)</td><td>Read</td><td>Free</td><td>The store lists macOS 11.0 or later; the app description says macOS Sequoia or later.</td></tr>
-<tr><td>Hangul for macOS (Hancom)</td><td>Read and edit</td><td>Sold on Hancom's official store (hancom.com), or included in a Hancom Docs personal plan. See <a href="https://www.hancom.com/store/list?type=mac">Hancom's official page</a> for prices</td><td>Latest three major macOS versions; 2 GB or more to install.</td></tr>
-<tr><td>Hancom Docs (web)</td><td>Hancom Office in the browser</td><td>Free plan with web office and 2 GB storage</td><td>You upload the file to Hancom Docs storage.</td></tr>
-<tr><td>Mekul (App Store)</td><td>Open, edit and save HWP, HWPX and Word; PDF; print</td><td>Free; optional in-app purchases (prices vary by storefront — see each App Store page)</td><td>Mac, iPhone and iPad.</td></tr>
-<tr><td>Polaris Office (Mac App Store)</td><td>View and edit HWP; save as PDF</td><td>In-app plans</td><td>Sign-in and an internet connection are required (official FAQ).</td></tr>
-<tr><td>HOP (open source)</td><td>Open HWP and HWPX, save HWP, export PDF, print</td><td>Free (MIT licence)</td><td>Download from GitHub. macOS, Windows, Linux.</td></tr>
-<tr><td>LibreOffice with the H2Orestart extension</td><td>Open HWP and HWPX</td><td>Free</td><td>Needs Java (JRE 8 or later); saves as ODT. LibreOffice's own filter only handles “Hangul WP 97” files.</td></tr>
-<tr><td>HWP Viewer (ONGSIM)</td><td>Read, edit, save as .hwp or .hwpx, fill in and sign forms</td><td>Free, plus an optional one-time lifetime unlock</td><td>HWP Viewer for Mac 2.0.0: viewing, editing in the editor window (Cmd-E) and saving as .hwp or .hwpx are free. Signed PDFs, conversions (PDFs or photos to Hangul files, Word export), PDF merging and PDF passwords are free three times each; after that a one-time lifetime unlock is needed (not a subscription; price shown in your App Store). macOS 15 or later; conversion needs macOS 26.</td></tr>
+<tr><td>Hancom Office HWP Viewer (Hancom, Mac App Store)</td><td data-label="What it does">Read</td><td data-label="Price">Free</td><td data-label="Notes">The store lists macOS 11.0 or later; the app description says macOS Sequoia or later.</td></tr>
+<tr><td>Hangul for macOS (Hancom)</td><td data-label="What it does">Read and edit</td><td data-label="Price">Sold on Hancom's official store (hancom.com), or included in a Hancom Docs personal plan. See <a href="https://www.hancom.com/store/list?type=mac">Hancom's official page</a> for prices</td><td data-label="Notes">Latest three major macOS versions; 2 GB or more to install.</td></tr>
+<tr><td>Hancom Docs (web)</td><td data-label="What it does">Hancom Office in the browser</td><td data-label="Price">Free plan with web office and 2 GB storage</td><td data-label="Notes">You upload the file to Hancom Docs storage.</td></tr>
+<tr><td>Mekul (App Store)</td><td data-label="What it does">Open, edit and save HWP, HWPX and Word; PDF; print</td><td data-label="Price">Free; optional in-app purchases (prices vary by storefront — see each App Store page)</td><td data-label="Notes">Mac, iPhone and iPad.</td></tr>
+<tr><td>Polaris Office (Mac App Store)</td><td data-label="What it does">View and edit HWP; save as PDF</td><td data-label="Price">In-app plans</td><td data-label="Notes">Sign-in and an internet connection are required (official FAQ).</td></tr>
+<tr><td>HOP (open source)</td><td data-label="What it does">Open HWP and HWPX, save HWP, export PDF, print</td><td data-label="Price">Free (MIT licence)</td><td data-label="Notes">Download from GitHub. macOS, Windows, Linux.</td></tr>
+<tr><td>LibreOffice with the H2Orestart extension</td><td data-label="What it does">Open HWP and HWPX</td><td data-label="Price">Free</td><td data-label="Notes">Needs Java (JRE 8 or later); saves as ODT. LibreOffice's own filter only handles “Hangul WP 97” files.</td></tr>
+<tr><td>HWP Viewer (ONGSIM)</td><td data-label="What it does">Read, edit, save as .hwp or .hwpx, fill in and sign forms</td><td data-label="Price">Free, plus an optional one-time lifetime unlock</td><td data-label="Notes">HWP Viewer for Mac 2.0.0: viewing, editing in the editor window (Cmd-E) and saving as .hwp or .hwpx are free. Signed PDFs, conversions (PDFs or photos to Hangul files, Word export), PDF merging and PDF passwords are free three times each; after that a one-time lifetime unlock is needed (not a subscription; price shown in your App Store). macOS 15 or later; conversion needs macOS 26.</td></tr>
 </tbody>
 </table>
 
@@ -145,7 +145,7 @@
 <h2>Things to know</h2>
 <ul>
 <li><a href="https://support.apple.com/en-us/105050">Apple's guide to converting files in Pages</a> does not mention HWP.</li>
-<li>HWP Viewer's menus are in Korean. Check the language of other apps before you buy.</li>
+<li>HWP Viewer's menus are in Korean.</li>
 <li>Distribution-only HWP files can be viewed but not saved as PDF or printed in HWP Viewer.</li>
 <li>Fonts differ between apps, so line breaks can shift.</li>
 </ul>
