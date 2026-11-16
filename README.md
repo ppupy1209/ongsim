@@ -28,3 +28,8 @@ Support and privacy pages for ONGSIM apps: https://ppupy1209.github.io/ongsim/
 ## 2026-10-20 Cutaway Facts Uploader 정책 페이지 직접 추가 (noindex)
 - cutaway-uploader/index.html·privacy.html·terms.html·icon.png: TikTok for Developers 앱(개인용 데스크톱 받은편지함 업로드 도구)의 소개·개인정보·약관 URL용. 홈·sitemap에는 넣지 않았다.
 - 개인정보: open_id·토큰은 운영자 Mac 파일에만, TikTok API 외 전송·제3자 공유 없음, 토큰 파일 삭제·TikTok 앱 권한 해제로 삭제. 시행일 10/20.
+
+## 2026-11-16 HWP 안내 글 7편·llms.txt 추가 (가지 ai-answers-hwp-guides-20261116, 게시 전)
+- hwp-viewer/mac-hwp-open·mac-hwp-edit·iphone-hwp-open·hwp-to-pdf-mac-iphone·hwp-vs-hwpx.html, hwp-viewer/en/open-hwp-mac·open-hwp-iphone.html, 목록 hwp-viewer/guides.html. 지원 페이지 안내 목록에 링크 3줄, sitemap에 8줄(lastmod), 사이트 llms.txt.
+- 이 글들은 build_site.py가 아니라 outputs/claude-takeover-20261004/marketing/ai-answers-20261116/tools/build_guides.py로 만든다(본문과 FAQ 구조화 데이터를 같은 문자열에서 만듦). 값이 바뀌면 그 스크립트를 고쳐 다시 만든다. build_site.py로 다시 생성할 때 support.html의 링크 3줄과 sitemap 8줄을 다시 넣는다.
+- 우리 앱 사실은 출시본 기준(Mac 2.0.0, iOS 1.7.0). 새 판이 나오면 무료·유료 경계 문장을 고친다.
