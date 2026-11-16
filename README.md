@@ -33,3 +33,4 @@ Support and privacy pages for ONGSIM apps: https://ppupy1209.github.io/ongsim/
 - hwp-viewer/mac-hwp-open·mac-hwp-edit·iphone-hwp-open·hwp-to-pdf-mac-iphone·hwp-vs-hwpx.html, hwp-viewer/en/open-hwp-mac·open-hwp-iphone.html, 목록 hwp-viewer/guides.html. 지원 페이지 안내 목록에 링크 3줄, sitemap에 8줄(lastmod), 사이트 llms.txt.
 - 이 글들은 build_site.py가 아니라 outputs/claude-takeover-20261004/marketing/ai-answers-20261116/tools/build_guides.py로 만든다(본문과 FAQ 구조화 데이터를 같은 문자열에서 만듦). 값이 바뀌면 그 스크립트를 고쳐 다시 만든다. build_site.py로 다시 생성할 때 support.html의 링크 3줄과 sitemap 8줄을 다시 넣는다.
 - 우리 앱 사실은 출시본 기준(Mac 2.0.0, iOS 1.7.0). 새 판이 나오면 무료·유료 경계 문장을 고친다.
+- 2026-11-16 밤 메인 판정 반영: 다른 제품의 '중' 확신 값·'광고 있음' 표기·근거 없는 조언 문장 제거, 첫 언급·JSON-LD에 스토어 이름, datePublished는 PUBLISHED 상수(2026-11-17), 표 칸 글자 끊김 방지 style. hwp-viewer/support.html의 암호 문서·설명 문장은 출시본 소스(iOS 1.7.0 a874773, Mac 2.0.0 f6db16d)로 확인해 직접 고침 — build_site.py로 다시 만들면 되돌아가니 재생성 전에 같은 문장을 원본(hwp-viewer-support)에 반영한다.

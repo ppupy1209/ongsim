@@ -20,6 +20,7 @@
 <link rel="icon" type="image/png" href="../icon.png">
 <link rel="apple-touch-icon" href="../icon.png">
 <link rel="stylesheet" href="../../ongsim.css">
+<style>.content th,.content td{overflow-wrap:normal;word-break:keep-all}</style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -29,8 +30,8 @@
    "headline": "How to open HWP files on a Mac",
    "description": "HWP and HWPX are Korean Hangul word-processor documents. Ways to open them on a Mac: free viewers, Hancom's own apps, web and open-source options, with prices and limits.",
    "inLanguage": "en",
-   "datePublished": "2026-11-16",
-   "dateModified": "2026-11-16",
+   "datePublished": "2026-11-17",
+   "dateModified": "2026-11-17",
    "author": {
     "@type": "Organization",
     "name": "ONGSIM",
@@ -67,10 +68,10 @@
     },
     {
      "@type": "Question",
-     "name": "Can Preview or Pages open HWP files?",
+     "name": "Can Pages open HWP files?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Apple's official documentation does not list HWP for Preview or Pages. Use an app that supports HWP."
+      "text": "Apple's guide to converting files in Pages does not mention HWP. Use an app that supports HWP."
      }
     },
     {
@@ -86,8 +87,11 @@
   {
    "@type": "SoftwareApplication",
    "@id": "https://ppupy1209.github.io/ongsim/hwp-viewer/#app",
-   "name": "HWP 뷰어",
-   "alternateName": "HWP Viewer",
+   "name": "HWP Viewer & Editor - Hangul",
+   "alternateName": [
+    "HWP 뷰어·편집 - 한글 hwp·hwpx",
+    "HWP Viewer"
+   ],
    "applicationCategory": "UtilitiesApplication",
    "operatingSystem": "iOS 18, iPadOS 18, macOS 15",
    "offers": {
@@ -112,7 +116,7 @@
 <div class="apphead"><img src="../icon.png" alt="" width="64" height="64"><div><p class="appname">HWP 뷰어 <span lang="en">· HWP Viewer</span></p><h1>How to open HWP files on a Mac</h1><p class="sub">Checked 2026-11-16 · Written by ONGSIM, the maker of HWP Viewer</p><nav class="tabs" aria-label="HWP 뷰어"><a href="../support.html">Support · 지원</a><a href="../privacy.html">Privacy Policy · 개인정보 처리방침</a><a href="../guides.html">Guides</a></nav></div></div>
 <div class="content">
 <section>
-<p><strong>HWP and HWPX files come from Hangul, the Korean word processor made by Hancom. Apple does not document HWP support in Preview or Pages, so install an app that reads them: Hancom&#x27;s free Hangul Viewer from the Mac App Store to read, or an editor such as Hangul for macOS, Mekul, HWP Viewer or the open-source HOP to make changes.</strong></p>
+<p><strong>HWP and HWPX files come from Hangul, the Korean word processor made by Hancom. Apple&#x27;s guide to converting files in Pages does not mention HWP, so install an app that reads them: Hancom&#x27;s free Hangul Viewer from the Mac App Store to read, or an editor such as Hangul for macOS, Mekul, HWP Viewer &amp; Editor - Hangul or the open-source HOP to make changes.</strong></p>
 <h2>Steps</h2>
 <ol>
 <li>Decide whether you only need to read the file or also edit and send it back.</li>
@@ -124,10 +128,10 @@
 <table>
 <thead><tr><th>Option</th><th>What it does</th><th>Price</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td>Hancom Office HWP Viewer (Hancom, Mac App Store)</td><td>Read</td><td>Free</td><td>The store lists macOS 11.0 or later; the app description says macOS Sequoia or later. Ads since a 2023 update.</td></tr>
-<tr><td>Hangul for macOS (Hancom)</td><td>Read and edit</td><td>Sold at hancom.com (home and student edition listed at ₩99,000), or included in a Hancom Docs personal plan (₩6,900 a month, ₩49,000 a year)</td><td>Latest three major macOS versions; 2 GB or more to install.</td></tr>
+<tr><td>Hancom Office HWP Viewer (Hancom, Mac App Store)</td><td>Read</td><td>Free</td><td>The store lists macOS 11.0 or later; the app description says macOS Sequoia or later.</td></tr>
+<tr><td>Hangul for macOS (Hancom)</td><td>Read and edit</td><td>Sold on Hancom's official store (hancom.com), or included in a Hancom Docs personal plan. See <a href="https://www.hancom.com/store/list?type=mac">Hancom's official page</a> for prices</td><td>Latest three major macOS versions; 2 GB or more to install.</td></tr>
 <tr><td>Hancom Docs (web)</td><td>Hancom Office in the browser</td><td>Free plan with web office and 2 GB storage</td><td>You upload the file to Hancom Docs storage.</td></tr>
-<tr><td>Mekul (App Store)</td><td>Open, edit and save HWP, HWPX and Word; PDF; print</td><td>Free; form templates ₩2,900 a month or ₩9,900 a year, AI ₩5,900 a month</td><td>Mac, iPhone and iPad.</td></tr>
+<tr><td>Mekul (App Store)</td><td>Open, edit and save HWP, HWPX and Word; PDF; print</td><td>Free; optional in-app purchases (prices vary by storefront — see each App Store page)</td><td>Mac, iPhone and iPad.</td></tr>
 <tr><td>Polaris Office (Mac App Store)</td><td>View and edit HWP; save as PDF</td><td>In-app plans</td><td>Sign-in and an internet connection are required (official FAQ).</td></tr>
 <tr><td>HOP (open source)</td><td>Open HWP and HWPX, save HWP, export PDF, print</td><td>Free (MIT licence)</td><td>Download from GitHub. macOS, Windows, Linux.</td></tr>
 <tr><td>LibreOffice with the H2Orestart extension</td><td>Open HWP and HWPX</td><td>Free</td><td>Needs Java (JRE 8 or later); saves as ODT. LibreOffice's own filter only handles “Hangul WP 97” files.</td></tr>
@@ -140,6 +144,7 @@
 
 <h2>Things to know</h2>
 <ul>
+<li><a href="https://support.apple.com/en-us/105050">Apple's guide to converting files in Pages</a> does not mention HWP.</li>
 <li>HWP Viewer's menus are in Korean. Check the language of other apps before you buy.</li>
 <li>Distribution-only HWP files can be viewed but not saved as PDF or printed in HWP Viewer.</li>
 <li>Fonts differ between apps, so line breaks can shift. Open the saved file once before you send it.</li>
@@ -152,8 +157,8 @@
 <p>HWP is the document format of Hangul, the Korean word processor by Hancom. HWPX is the newer XML-based format that follows the Korean standard KS X 6101.</p>
 <h3>Can I open HWP files on a Mac for free?</h3>
 <p>Yes. Hancom Office HWP Viewer, Mekul and HWP Viewer are free in the Mac App Store, and HOP is free open-source software.</p>
-<h3>Can Preview or Pages open HWP files?</h3>
-<p>Apple&#x27;s official documentation does not list HWP for Preview or Pages. Use an app that supports HWP.</p>
+<h3>Can Pages open HWP files?</h3>
+<p>Apple&#x27;s guide to converting files in Pages does not mention HWP. Use an app that supports HWP.</p>
 <h3>Can Google Drive preview HWP files?</h3>
 <p>Google Drive&#x27;s help page on previewable file types does not list HWP or HWPX. You can still store the files there.</p>
 </section>

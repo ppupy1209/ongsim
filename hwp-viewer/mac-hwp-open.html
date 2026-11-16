@@ -20,6 +20,7 @@
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="../ongsim.css">
+<style>.content th,.content td{overflow-wrap:normal;word-break:keep-all}</style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -29,8 +30,8 @@
    "headline": "맥에서 HWP(한글) 파일 여는 법",
    "description": "Mac에서 .hwp·.hwpx 파일을 여는 방법을 보기만 할 때와 고쳐서 보낼 때로 나눠 정리했습니다. 무료 앱, 한컴 정식 제품, 웹, 오픈소스.",
    "inLanguage": "ko",
-   "datePublished": "2026-11-16",
-   "dateModified": "2026-11-16",
+   "datePublished": "2026-11-17",
+   "dateModified": "2026-11-17",
    "author": {
     "@type": "Organization",
     "name": "ONGSIM",
@@ -59,10 +60,10 @@
     },
     {
      "@type": "Question",
-     "name": "맥 미리보기나 Pages로 HWP를 열 수 있나요?",
+     "name": "맥의 Pages로 HWP를 열 수 있나요?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Apple의 공식 안내에는 미리보기·Pages가 HWP를 연다는 내용이 없습니다. HWP를 지원하는 앱을 쓰는 것이 확실합니다."
+      "text": "Apple의 Pages 파일 변환 안내에는 HWP가 나오지 않습니다. HWP를 지원하는 앱을 쓰는 것이 확실합니다."
      }
     },
     {
@@ -78,7 +79,7 @@
      "name": "받은 HWP를 고쳐서 다시 .hwp로 보내려면 어떻게 하나요?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "편집과 .hwp 저장이 되는 앱이 필요합니다. 맥글, HOP, HWP 뷰어(편집 창, 무료)가 .hwp로 저장합니다. 한글 for macOS는 HWPX가 기본 저장 형식입니다. 중요한 문서는 저장한 파일을 한 번 다시 열어 확인하세요."
+      "text": "편집과 .hwp 저장이 되는 앱이 필요합니다. 맥글, HOP, HWP 뷰어(편집 창, 무료)가 .hwp로 저장합니다. 한글 for macOS는 HWPX가 기본 저장 형식입니다."
      }
     }
    ]
@@ -86,8 +87,11 @@
   {
    "@type": "SoftwareApplication",
    "@id": "https://ppupy1209.github.io/ongsim/hwp-viewer/#app",
-   "name": "HWP 뷰어",
-   "alternateName": "HWP Viewer",
+   "name": "HWP 뷰어·편집 - 한글 hwp·hwpx",
+   "alternateName": [
+    "HWP Viewer & Editor - Hangul",
+    "HWP 뷰어"
+   ],
    "applicationCategory": "UtilitiesApplication",
    "operatingSystem": "iOS 18, iPadOS 18, macOS 15",
    "offers": {
@@ -112,7 +116,7 @@
 <div class="apphead"><img src="icon.png" alt="" width="64" height="64"><div><p class="appname">HWP 뷰어 <span lang="en">· HWP Viewer</span></p><h1>맥에서 HWP(한글) 파일 여는 법</h1><p class="sub">2026-11-16 확인 · 앱을 만든 ONGSIM이 쓴 안내입니다</p><nav class="tabs" aria-label="HWP 뷰어"><a href="support.html">Support · 지원</a><a href="privacy.html">Privacy Policy · 개인정보 처리방침</a><a href="guides.html">안내 글</a></nav></div></div>
 <div class="content">
 <section>
-<p><strong>Mac에서 HWP 파일을 열려면 HWP를 지원하는 앱을 하나 설치합니다. 보기만 하려면 Mac App Store의 무료 앱(한컴오피스 한글 Viewer, 맥글, HWP 뷰어 등)을 받고 파일을 두 번 누르면 됩니다. 고쳐서 다시 보내야 하면 편집이 되는 앱(한글 for macOS, 맥글, HWP 뷰어, HOP 등)을 고릅니다.</strong></p>
+<p><strong>Mac에서 HWP 파일을 열려면 HWP를 지원하는 앱을 하나 설치합니다. 보기만 하려면 Mac App Store의 무료 앱(한컴오피스 한글 Viewer, 맥글, HWP 뷰어·편집 - 한글 hwp·hwpx 등)을 받고 파일을 두 번 누르면 됩니다. 고쳐서 다시 보내야 하면 편집이 되는 앱(한글 for macOS, 맥글, HWP 뷰어, HOP 등)을 고릅니다.</strong></p>
 <h2>여는 순서</h2>
 <ol>
 <li>보기만 할지, 고쳐서 다시 보낼지 정합니다. 아래 표에서 맞는 방법을 고릅니다.</li>
@@ -120,15 +124,15 @@
 <li>Finder에서 HWP 파일을 오른쪽 클릭하고 ‘다음으로 열기’에서 설치한 앱을 고릅니다.</li>
 <li>늘 같은 앱으로 열려면 파일을 고르고 ⌘I(정보 가져오기)를 누른 뒤 ‘다음으로 열기’에서 앱을 고르고 ‘모두 변경’을 누릅니다.</li>
 </ol>
-<p>Apple의 공식 안내에는 Mac에 들어 있는 미리보기·Pages가 HWP를 연다는 내용이 없습니다. 그래서 HWP를 지원하는 앱을 따로 쓰는 것이 확실합니다.</p>
+<p><a href="https://support.apple.com/ko-kr/105050">Apple의 Pages 파일 변환 안내</a>에는 HWP가 나오지 않습니다. 그래서 HWP를 지원하는 앱을 따로 쓰는 것이 확실합니다.</p>
 
 <h2>방법별 정리</h2>
 <table>
 <thead><tr><th>방법</th><th>할 수 있는 것</th><th>값</th><th>알아 둘 것</th></tr></thead>
 <tbody>
-<tr><td>한컴오피스 한글 Viewer (한컴, Mac App Store)</td><td>보기</td><td>무료</td><td>App Store 표시는 macOS 11.0 이상, 앱 설명은 macOS Sequoia 이상. 2023년 업데이트부터 광고가 있습니다.</td></tr>
-<tr><td>한글 for macOS (한컴)</td><td>보기·편집</td><td>hancom.com 판매(가정·학생용 ₩99,000 표시) 또는 한컴독스 개인 구독(월 ₩6,900·연 ₩49,000)에 포함</td><td>최신 3개 macOS 지원, 설치 2GB 이상. hancom.com 스토어에서 팝니다.</td></tr>
-<tr><td>한컴독스 웹 (한컴)</td><td>브라우저에서 한컴오피스 쓰기</td><td>무료 요금제에 웹 한컴오피스·저장공간 2GB</td><td>파일을 한컴독스 저장공간에 올려서 씁니다. 무료 요금제의 Mac 앱은 뷰어입니다.</td></tr>
+<tr><td>한컴오피스 한글 Viewer (한컴, Mac App Store)</td><td>보기</td><td>무료</td><td>App Store 표시는 macOS 11.0 이상, 앱 설명은 macOS Sequoia 이상.</td></tr>
+<tr><td>한글 for macOS (한컴)</td><td>보기·편집</td><td>한컴 공식 스토어(hancom.com)에서 판매, 또는 한컴독스 개인용 요금제에 포함. 값은 <a href="https://www.hancom.com/store/list?type=mac">한컴 공식 페이지</a>에서 확인</td><td>최신 3개 macOS 지원, 설치 2GB 이상.</td></tr>
+<tr><td>한컴독스 웹 (한컴)</td><td>브라우저에서 한컴오피스 쓰기</td><td>무료 요금제에 웹 한컴오피스·저장공간 2GB</td><td>파일을 한컴독스 저장공간에 올려서 씁니다. <a href="https://www.hancom.com/service/docs">한컴독스 요금제 안내</a>에는 무료 요금제에 ‘Windows/Mac 한컴오피스 뷰어’가 들어 있다고 적혀 있습니다.</td></tr>
 <tr><td>맥글 (App Store)</td><td>열기·편집·저장(HWP·HWPX·워드)·PDF·인쇄</td><td>무료. 양식 이용권 월 ₩2,900·연 ₩9,900, 맥글 AI 월 ₩5,900</td><td>Mac·iPhone·iPad. 스토어 설명에 HWP 3.0도 연다고 적혀 있습니다.</td></tr>
 <tr><td>폴라리스 오피스 (Mac App Store)</td><td>HWP 보기·편집, PDF로 저장</td><td>앱 안 구입(스마트 ₩4,900부터)</td><td>공식 FAQ 기준 로그인과 인터넷 연결이 필요합니다.</td></tr>
 <tr><td>HOP (오픈소스)</td><td>HWP·HWPX 열기, HWP 저장, PDF 내보내기, 인쇄</td><td>무료(MIT 라이선스)</td><td>GitHub에서 받습니다. macOS·Windows·Linux.</td></tr>
@@ -155,12 +159,12 @@
 <h2>자주 묻는 것</h2>
 <h3>맥에서 HWP 파일을 무료로 열 수 있나요?</h3>
 <p>네. 한컴오피스 한글 Viewer, 맥글, HWP 뷰어처럼 Mac App Store에서 무료로 받는 앱으로 열 수 있습니다. 보기만 할 때는 어느 앱이든 됩니다.</p>
-<h3>맥 미리보기나 Pages로 HWP를 열 수 있나요?</h3>
-<p>Apple의 공식 안내에는 미리보기·Pages가 HWP를 연다는 내용이 없습니다. HWP를 지원하는 앱을 쓰는 것이 확실합니다.</p>
+<h3>맥의 Pages로 HWP를 열 수 있나요?</h3>
+<p>Apple의 Pages 파일 변환 안내에는 HWP가 나오지 않습니다. HWP를 지원하는 앱을 쓰는 것이 확실합니다.</p>
 <h3>구글 드라이브에서 HWP를 미리 볼 수 있나요?</h3>
 <p>구글 드라이브 고객센터의 미리보기 형식 목록에는 HWP·HWPX가 없습니다. 파일을 보관할 수는 있습니다.</p>
 <h3>받은 HWP를 고쳐서 다시 .hwp로 보내려면 어떻게 하나요?</h3>
-<p>편집과 .hwp 저장이 되는 앱이 필요합니다. 맥글, HOP, HWP 뷰어(편집 창, 무료)가 .hwp로 저장합니다. 한글 for macOS는 HWPX가 기본 저장 형식입니다. 중요한 문서는 저장한 파일을 한 번 다시 열어 확인하세요.</p>
+<p>편집과 .hwp 저장이 되는 앱이 필요합니다. 맥글, HOP, HWP 뷰어(편집 창, 무료)가 .hwp로 저장합니다. 한글 for macOS는 HWPX가 기본 저장 형식입니다.</p>
 </section>
 </div>
 <aside class="notice"><p>마지막 확인: 2026-11-16 · 확인한 판: HWP 뷰어 Mac 2.0.0 · 다른 제품은 각 공식 페이지</p><p>HWP 뷰어는 이 글을 쓴 ONGSIM이 만든 앱입니다. 다른 제품의 값과 기능은 각 공식 페이지에서 2026-11-16에 확인한 것이며 바뀔 수 있습니다.</p><p>‘한글’, ‘한/글’은 한글과컴퓨터의 등록상표이며 HWP 뷰어는 한글과컴퓨터와 관련이 없습니다. 다른 제품 이름은 각 회사의 상표입니다.</p></aside>
