@@ -35,3 +35,8 @@ Support and privacy pages for ONGSIM apps: https://ppupy1209.github.io/ongsim/
 - 우리 앱 사실은 출시본 기준(Mac 2.0.1, iOS 1.7.0 — 무료 경계 상수는 build_guides.py 한곳). 새 판이 나오면 무료·유료 경계 문장을 고친다.
 - 2026-11-16 밤 메인 판정 반영: 다른 제품의 '중' 확신 값·'광고 있음' 표기·근거 없는 조언 문장 제거, 첫 언급·JSON-LD에 스토어 이름, datePublished는 PUBLISHED 상수(2026-11-17), 표 칸 글자 끊김 방지 style. hwp-viewer/support.html의 암호 문서·설명 문장은 출시본 소스(iOS 1.7.0 a874773, Mac 2.0.0 f6db16d)로 확인해 직접 고침 — build_site.py로 다시 만들면 되돌아가니 재생성 전에 같은 문장을 원본(hwp-viewer-support)에 반영한다.
 - 2026-11-17 새벽: 표는 520px 이하에서 CSS만으로 카드(줄 하나 = 카드 하나, 둘째 칸부터 data-label 이름표)로 쌓는다. 앞의 14px·<wbr> 손질은 걷어냄. 521px 이상은 원래 표.
+
+## 2026-11-17 회귀 작가 페이지 직접 추가 (출시 전, noindex, 게시 전 초안)
+- webnovel/support.html·privacy.html·index.html·icon.png를 choguen 형식 그대로 작성했다. 홈·sitemap에는 넣지 않았다. push·게시는 메인이 글을 본 뒤.
+- 개인정보는 앱 코드 기준(v2-ios): 계정·서버·네트워크 요청 없음(StoreKit 제외), 기기 안 저장(작품·도감), 무료 작품 횟수만 키체인 + iCloud 키-값, Apple 처리 구입, 의견 보내기 = 기기 메일 작성 창, 평가 요청 = 시스템 창, 권한·광고·분석 없음. 시행일 11/17(초안).
+- 옛 v1 페이지(owedone-support 저장소의 커밋 안 된 webnovel/ 폴더 — 다른 게임 설명)는 건드리지 않았다.
